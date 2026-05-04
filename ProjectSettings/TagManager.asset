@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Option
+  - Speech
   layers:
   - Default
   - TransparentFX
