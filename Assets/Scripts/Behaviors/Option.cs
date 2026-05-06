@@ -3,13 +3,6 @@ using UnityEngine.EventSystems;
 
 public class Option : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public bool isRight = false;
-
-
-    [SerializeField]
-    ClientManager manager;
-
     Wiggle wiggle; //This causes the text to wiggle? - Syd
 
     void Start()
@@ -19,14 +12,8 @@ public class Option : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void Submit()
     {
-        if (isRight)
-        {
-            manager.RightOption();
-        }
-        else
-        {
-            manager.WrongOption();
-        }
+        var manager = GameObject.FindAnyObjectByType<ClientManager>();
+        manager.SubmitAnswer(name);
     }
 
     public void OnPointerEnter(PointerEventData eventData)

@@ -19,7 +19,6 @@ public class Emoji : MonoBehaviour
         time += Time.deltaTime;
         if (time >= waitTime)
         {
-            Debug.Log($"Firing {time} after waiting {waitTime} seconds");
             ac.SetTrigger("Grow");
             enabled = false;//What is enabled? - Syd
         }

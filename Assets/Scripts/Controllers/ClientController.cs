@@ -1,32 +1,55 @@
+using UnityEditor.PackageManager;
 using UnityEngine;
 
-public class Client : MonoBehaviour
+public class ClientManager : MonoBehaviour
 {
-    [SerializeField]
-    string answer;
-
-    // This method runs when the gameobject is enabled!
-    private void OnEnable()
+    void Start()
     {
-        var choices = GameObject.FindGameObjectsWithTag("Option");
-
-
-        //Answer Option
-        bool hasAnswer = false;
-        foreach (var choice in choices)
+        var questions = transform.Find("Questions");
+        foreach (Transform question in questions)
         {
-            if (choice.name == answer)
-            {
-                hasAnswer = true;
-            }
-            choice.GetComponent<Option>().isRight = choice.name == answer;
+            question.gameObject.SetActive(false);
         }
 
-        if (!hasAnswer)
+        questions.GetChild(0).gameObject.SetActive(true);
+    }
+
+    public void SubmitAnswer(string answer)
+    {
+        var question = GetComponentInChildren<Question>();
+        if (question is null)
         {
-            Debug.LogError($"No valid option! {name}'s answer is {answer}");
+            Debug.LogError("Question not found - is no question being asked?");
         }
 
+        var response = question.Resolve(answer);
+        if (response.status == ResponseStatus.CORRECT)
+        {
+            Debug.Log("That's right!");
+        }
+        else if (response.status == ResponseStatus.CORRECT)
+        {
+            Debug.Log("That's wrong!");
+        }
+        else
+        {
+            Debug.Log("That's... fine...");
+        }
 
+        question.gameObject.SetActive(false);
+        if (response.leadsTo == null)
+        {
+            EndClient();
+        }
+        else
+        {
+            response.leadsTo.SetActive(true);
+        }
+    }
+    
+    public void EndClient()
+    {
+        Debug.Log("Hit a null path, the conversation with this client is over!");
+        FindAnyObjectByType<ClientListManager>().NextClient();
     }
 }
