@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2687371812159478481
 RectTransform:
   m_ObjectHideFlags: 0
@@ -115,14 +115,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.38431373}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3161207479620040896, guid: 19e20125eec5fac4faea36bbc68c3bc1, type: 3}
+  m_Sprite: {fileID: -2063119410429711812, guid: d82e1013fa9f6a448861f9a59a447e68, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

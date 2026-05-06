@@ -1,5 +1,3 @@
-using Unity.VisualScripting;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class ClientListManager : MonoBehaviour
@@ -14,11 +12,16 @@ public class ClientListManager : MonoBehaviour
 
     void UpdateProgress()
     {
+        Clear();
+        transform.GetChild(progress).gameObject.SetActive(true);
+    }
+
+    void Clear()
+    {
         foreach (Transform child in transform)
         {
             child.gameObject.SetActive(false);
         }
-        transform.GetChild(progress).gameObject.SetActive(true);
     }
 
     public void NextClient()

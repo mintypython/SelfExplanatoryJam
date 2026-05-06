@@ -1,4 +1,3 @@
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class ClientManager : MonoBehaviour
@@ -23,17 +22,19 @@ public class ClientManager : MonoBehaviour
         }
 
         var response = question.Resolve(answer);
-        if (response.status == ResponseStatus.CORRECT)
+        switch (response.status)
         {
-            Debug.Log("That's right!");
-        }
-        else if (response.status == ResponseStatus.CORRECT)
-        {
-            Debug.Log("That's wrong!");
-        }
-        else
-        {
-            Debug.Log("That's... fine...");
+            case ResponseStatus.CORRECT:
+                Debug.Log("That's right!");
+                break;
+
+            case ResponseStatus.INCORRECT:
+                Debug.Log("That's right!");
+                break;
+
+            default:
+                Debug.Log("That's fine");
+                break;
         }
 
         question.gameObject.SetActive(false);
