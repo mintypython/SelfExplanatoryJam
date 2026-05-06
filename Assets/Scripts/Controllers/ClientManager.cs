@@ -8,9 +8,9 @@ public class ClientManager : MonoBehaviour
     public int _dialoguePosition = 1;
 
     [Header("Game Objects")]
-    public GameObject _girl1;
-    public GameObject _girl2Wrong;
-    public GameObject _girl2Right;
+    public GameObject _BF1;
+    public GameObject _BFAngry;
+    public GameObject _BF2Right;
 
     //[SerializeField]
     //SerializableDictionary<string, Question> questions;
@@ -18,8 +18,8 @@ public class ClientManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _girl2Wrong.SetActive(false);
-        _girl2Right.SetActive(false);
+        _BFAngry.SetActive(false);
+        _BF2Right.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,22 +33,23 @@ public class ClientManager : MonoBehaviour
     {
         _dialoguePosition++;
 
-        if (_dialoguePosition >= 2)
+        if (_dialoguePosition == 2)
         {
-            _girl1.SetActive(false);
-            _girl2Wrong.SetActive(true);
-            _girl2Right.SetActive(false);
+            _BF1.SetActive(false);//lines 39 & 40 will be replaced with animation controller responses - Syd
+            _BF1.SetActive(true);
+            _BFAngry.SetActive(true);
+            _dialoguePosition--; //The dialogue briefly jumps from position 1 to 2 to 1. This also allows the right option to be selected in the right position
         }
     }
 
     public void RightOption()
     {
         _dialoguePosition++;
-        if (_dialoguePosition >= 2)
+        if (_dialoguePosition == 2)
         {
-            _girl1.SetActive(false);
-            _girl2Right.SetActive(true);
-            _girl2Wrong.SetActive(false);
+            _BFAngry.SetActive(false);
+            _BF1.SetActive(false);
+            _BF2Right.SetActive(true);
         }
     }
 

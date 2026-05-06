@@ -10,6 +10,8 @@ public class Client : MonoBehaviour
     {
         var choices = GameObject.FindGameObjectsWithTag("Option");
 
+
+        //Answer Option
         bool hasAnswer = false;
         foreach (var choice in choices)
         {
@@ -24,5 +26,7 @@ public class Client : MonoBehaviour
         {
             Debug.LogError($"No valid option! {name}'s answer is {answer}");
         }
+
+
     }
 }

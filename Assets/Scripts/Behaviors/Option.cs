@@ -6,14 +6,15 @@ public class Option : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public bool isRight = false;
 
+
     [SerializeField]
     ClientManager manager;
 
-    Wiggle wiggle;
+    Wiggle wiggle; //This causes the text to wiggle? - Syd
 
     void Start()
     {
-        wiggle = GetComponentInChildren<Wiggle>();
+        wiggle = GetComponentInChildren<Wiggle>(); 
     }
 
     public void Submit()

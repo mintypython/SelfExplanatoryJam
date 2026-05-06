@@ -21,7 +21,7 @@ public class Emoji : MonoBehaviour
         {
             Debug.Log($"Firing {time} after waiting {waitTime} seconds");
             ac.SetTrigger("Grow");
-            enabled = false;
+            enabled = false;//What is enabled? - Syd
         }
     }
 }
