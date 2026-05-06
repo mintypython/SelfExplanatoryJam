@@ -1,5 +1,10 @@
 using UnityEngine;
 
+/// <summary>
+/// This component handles changing from one client to another
+/// When NextClient() is called, the current client is turned off and the next one turned on
+/// If no clients are left, the game is over!
+/// </summary>
 public class ClientListManager : MonoBehaviour
 {
     [SerializeField]

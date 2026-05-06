@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 public class Option : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     Wiggle wiggle; //This causes the text to wiggle? - Syd
+    // Yep! The wiggle class makes an object wiggle back and worth if you set its active variable to true
 
     void Start()
     {
