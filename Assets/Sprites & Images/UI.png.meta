@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: f8316659e9ff6a64592fb2726d888fe3
+guid: 2b761a0a45aec714db2f2718e150c562
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7270883648286297913
-    second: office 1_0
+      213: 5707218116961789024
+    second: ui_0
   - first:
-      213: -8861012414975254889
-    second: office 1_1
+      213: 3556181715638617739
+    second: ui_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: office_chair
+      name: ui_button
       rect:
         serializedVersion: 2
-        x: 40
-        y: 10
-        width: 697
-        height: 944
+        x: 96
+        y: 977
+        width: 374
+        height: 164
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c0f2bc38d1a81b90800000000000000
-      internalID: -7270883648286297913
+      spriteID: 0646e25a3ac143f40800000000000000
+      internalID: 5707218116961789024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: office_table
+      name: ui_speech_bubble
       rect:
         serializedVersion: 2
-        x: 1205
-        y: 23
-        width: 923
-        height: 457
+        x: 1098
+        y: 670
+        width: 1014
+        height: 493
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79ed21ff72c570580800000000000000
-      internalID: -8861012414975254889
+      spriteID: b86016dcd681a5130800000000000000
+      internalID: 3556181715638617739
       vertices: []
       indices: 
       edges: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: da5a5cc7d1917f445828c3af5b38f994
+    spriteID: d89833802977e3c4d93f4c1887a3aef9
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      office_chair: -7270883648286297913
-      office_table: -8861012414975254889
+      ui_button: 5707218116961789024
+      ui_speech_bubble: 3556181715638617739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

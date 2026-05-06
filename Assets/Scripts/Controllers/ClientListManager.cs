@@ -7,12 +7,12 @@ public class ClientListManager : MonoBehaviour
 
     void Start()
     {
-        UpdateProgress();
+        Clear();
+        ActivateCurrentClient();
     }
 
-    void UpdateProgress()
+    void ActivateCurrentClient()
     {
-        Clear();
         transform.GetChild(progress).gameObject.SetActive(true);
     }
 
@@ -27,12 +27,13 @@ public class ClientListManager : MonoBehaviour
     public void NextClient()
     {
         progress++;
-
+        Clear();
         if (progress < transform.childCount) {
-            UpdateProgress();
+            ActivateCurrentClient();
         }
         else
         {
+            FindAnyObjectByType<Option>().transform.parent.gameObject.SetActive(false);
             Debug.Log("The game is over!");
         }
     }

@@ -67,8 +67,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 5707218116961789024, guid: 2b761a0a45aec714db2f2718e150c562, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -375,5 +375,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da5728d61fade04f8c3e611dc26e5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Option
-  isRight: 0
-  manager: {fileID: 0}

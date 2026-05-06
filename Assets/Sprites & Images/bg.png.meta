@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: f8316659e9ff6a64592fb2726d888fe3
+guid: a89ee7ea703aa8444aa220f6a5c7642d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7270883648286297913
-    second: office 1_0
-  - first:
-      213: -8861012414975254889
-    second: office 1_1
+      213: -4364034832326165938
+    second: bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,45 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: office_chair
+      name: bg_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 10
-        width: 697
-        height: 944
+        x: 0
+        y: 0
+        width: 2153
+        height: 1215
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c0f2bc38d1a81b90800000000000000
-      internalID: -7270883648286297913
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: office_table
-      rect:
-        serializedVersion: 2
-        x: 1205
-        y: 23
-        width: 923
-        height: 457
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79ed21ff72c570580800000000000000
-      internalID: -8861012414975254889
+      spriteID: e4a74cf0175df63c0800000000000000
+      internalID: -4364034832326165938
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: da5a5cc7d1917f445828c3af5b38f994
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      office_chair: -7270883648286297913
-      office_table: -8861012414975254889
+      bg_0: -4364034832326165938
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
