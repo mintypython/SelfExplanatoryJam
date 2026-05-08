@@ -1,11 +1,8 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Option : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ContinueButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    [SerializeField]
-    private Answer answer;
-
     Wiggle wiggle; //This causes the text to wiggle? - Syd
     // Yep! The wiggle class makes an object wiggle back and worth if you set its active variable to true
 
@@ -16,8 +13,8 @@ public class Option : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void Submit()
     {
-        var question = GetComponentInParent<Question>();
-        question.SubmitAnswer(answer);
+        var client = GetComponentInParent<ClientController>();
+        client.NextQuestion();
     }
 
     public void OnPointerEnter(PointerEventData eventData)

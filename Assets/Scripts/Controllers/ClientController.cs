@@ -1,64 +1,53 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Every client will have this component!
 /// Whenever you press a button response, this component handles the answer
 /// You don't need to do anything special per client, just give them this component
 /// </summary>
-public class ClientManager : MonoBehaviour
+public class ClientController : MonoBehaviour
 {
+    ClientListController clientList;
+
+    Transform body;
+
+    int progress = 0;
+    Transform phases;
+
+    Color neutral = Color.white;
+    Color correct = Color.green;
+    Color incorrect = Color.red;
+
     void Start()
     {
-        // Even if we leave a few questions active in the editor, this code will deactivate them all
-        var questions = transform.Find("Questions");
-        foreach (Transform question in questions)
-        {
-            question.gameObject.SetActive(false);
-        }
+        clientList = GetComponentInParent<ClientListController>();
 
+        body = transform.Find("Body");
+        phases = transform.Find("Phases");
+        
         // Order in the resource tree matters! Topmost question is the first one
-        questions.GetChild(0).gameObject.SetActive(true);
+        UpdateProgress();
     }
 
-    // All option buttons now run this function
-    // For more context on what's going on here, look at the Question class
-    public void SubmitAnswer(string answer)
+    void UpdateProgress()
     {
-        var question = GetComponentInChildren<Question>();
-
-        // Theoretically this should never happen, we can only see this message if a client has zero questions
-        if (question is null)
+        // Even if we leave a few questions active in the editor, this code will deactivate them all
+        for (var i = 0; i < phases.childCount; i++)
         {
-            Debug.LogError("Question not found - is no question being asked?");
+            phases.GetChild(i).gameObject.SetActive(i == progress);
         }
+    }
 
-        // "Resolve" checks to see if your answer is correct, incorrect, or neutral
-        // A "correct" answer means you gain a heart, "incorrect" means you lose one, "neutral" means no change
-        var response = question.Resolve(answer);
-        switch (response.status)
+    public void NextQuestion()
+    {
+        Debug.Log("Moving on to the next question");
+        progress++;
+        UpdateProgress();
+
+        if (progress >= phases.childCount)
         {
-            case ResponseStatus.CORRECT:
-                Debug.Log("That's right!");
-                break;
-
-            case ResponseStatus.INCORRECT:
-                Debug.Log("That's right!");
-                break;
-
-            default:
-                Debug.Log("That's fine");
-                break;
-        }
-
-        // We then turn off the current question and move on to the next
-        question.gameObject.SetActive(false);
-        if (response.leadsTo == null)
-        {
-            EndClient();
-        }
-        else
-        {
-            response.leadsTo.SetActive(true);
+            clientList.NextClient();
         }
     }
     
@@ -66,6 +55,18 @@ public class ClientManager : MonoBehaviour
     public void EndClient()
     {
         Debug.Log("Hit a null path, the conversation with this client is over!");
-        FindAnyObjectByType<ClientListManager>().NextClient();
+        FindAnyObjectByType<ClientListController>().NextClient();
+    }
+
+    public void Right()
+    {
+        Debug.Log("That's the correct answer!");
+        GetComponentInChildren<Image>().color = correct;
+    }
+
+    public void Wrong()
+    {
+        Debug.Log("That's the wrong answer!");
+        GetComponentInChildren<Image>().color = incorrect;
     }
 }

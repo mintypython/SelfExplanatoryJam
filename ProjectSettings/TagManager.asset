@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Option
   - Speech
+  - Phase
   layers:
   - Default
   - TransparentFX

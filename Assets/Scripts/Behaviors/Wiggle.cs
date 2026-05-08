@@ -14,12 +14,18 @@ public class Wiggle : MonoBehaviour
 
     void Update()
     {
+        var rate = 1f;
         if (active)
         {
-            time += Time.deltaTime;
+            if (Math.Abs(Math.Sin(time * 2 * Math.PI / period)) > 0.75f)
+            {
+                rate /= 3;
+            }
+            time += Time.deltaTime * rate;
         }
         else
         {
+            rate = 5f;
             if (time > period)
             {
                 time %= period;
@@ -35,7 +41,7 @@ public class Wiggle : MonoBehaviour
                 max = period / 2;
             }
 
-            time = Math.Min(time + Time.deltaTime * 5, max);
+            time = Math.Min(time + Time.deltaTime * rate, max);
         }
 
         var angle = Math.Sin(time * 2 * Math.PI / period) * amplitude;
