@@ -8,7 +8,7 @@ using UnityEngine;
 public class ClientListController : MonoBehaviour
 {
     [SerializeField]
-    int progress = 0;
+    int position = 0;
 
     void Start()
     {
@@ -19,16 +19,31 @@ public class ClientListController : MonoBehaviour
     {
         for (var i = 0; i < transform.childCount; i++)
         {
-            transform.GetChild(i).gameObject.SetActive(i == progress);
+            transform.GetChild(i).gameObject.SetActive(i == position);
         }
     }
 
     public void NextClient()
     {
-        progress++;
-        UpdateClients();
-        if (progress >= transform.childCount)
+        var progressBar = FindAnyObjectByType<ProgressBarController>();
+        switch (progressBar.Evaluate())
         {
+            case ProgressBarController.ClientSatisfaction.HAPPY:
+                Debug.Log("The client was very satisfied!");
+                break;
+
+            case ProgressBarController.ClientSatisfaction.ANGRY:
+                Debug.Log("The client was very angry with you!");
+                break;
+
+            default:
+                break;
+        }
+        position++;
+        UpdateClients();
+        if (position >= transform.childCount)
+        {
+            progressBar.gameObject.SetActive(false);
             Debug.Log("The game is over!");
         }
     }

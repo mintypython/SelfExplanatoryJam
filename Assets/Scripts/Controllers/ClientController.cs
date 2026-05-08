@@ -12,22 +12,29 @@ public class ClientController : MonoBehaviour
 
     Transform body;
 
-    int progress = 0;
+    int position = 0;
     Transform phases;
 
     Color neutral = Color.white;
     Color correct = Color.green;
     Color incorrect = Color.red;
+    ProgressBarController progress;
 
-    void Start()
+    void Awake()
     {
         clientList = GetComponentInParent<ClientListController>();
 
         body = transform.Find("Body");
         phases = transform.Find("Phases");
-        
+    }
+
+    void OnEnable()
+    {
         // Order in the resource tree matters! Topmost question is the first one
         UpdateProgress();
+
+        progress = FindAnyObjectByType<ProgressBarController>();
+        progress.Initialize(phases.childCount);
     }
 
     void UpdateProgress()
@@ -35,17 +42,18 @@ public class ClientController : MonoBehaviour
         // Even if we leave a few questions active in the editor, this code will deactivate them all
         for (var i = 0; i < phases.childCount; i++)
         {
-            phases.GetChild(i).gameObject.SetActive(i == progress);
+            phases.GetChild(i).gameObject.SetActive(i == position);
         }
     }
 
     public void NextQuestion()
     {
+        body.GetComponent<Image>().color = neutral;
         Debug.Log("Moving on to the next question");
-        progress++;
+        position++;
         UpdateProgress();
 
-        if (progress >= phases.childCount)
+        if (position >= phases.childCount)
         {
             clientList.NextClient();
         }
@@ -61,12 +69,14 @@ public class ClientController : MonoBehaviour
     public void Right()
     {
         Debug.Log("That's the correct answer!");
-        GetComponentInChildren<Image>().color = correct;
+        body.GetComponent<Image>().color = correct;
+        progress.SetProgress(position, true);
     }
 
     public void Wrong()
     {
         Debug.Log("That's the wrong answer!");
-        GetComponentInChildren<Image>().color = incorrect;
+        body.GetComponent<Image>().color = incorrect;
+        progress.SetProgress(position, false);
     }
 }
