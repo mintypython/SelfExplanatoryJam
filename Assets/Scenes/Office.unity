@@ -408,6 +408,22 @@ PrefabInstance:
       propertyPath: answer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5590800465213832424, guid: 8396f77bf9752124cabbe2cf2971ae64, type: 3}
+      propertyPath: period.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590800465213832424, guid: 8396f77bf9752124cabbe2cf2971ae64, type: 3}
+      propertyPath: period.y
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590800465213832424, guid: 8396f77bf9752124cabbe2cf2971ae64, type: 3}
+      propertyPath: amplitude.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590800465213832424, guid: 8396f77bf9752124cabbe2cf2971ae64, type: 3}
+      propertyPath: amplitude.y
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 5618749802569354891, guid: 8396f77bf9752124cabbe2cf2971ae64, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2177,7 +2193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c400386a8ca957f419ae74816eea607f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClientListManager
-  progress: 0
+  position: 0
 --- !u!1 &881309447
 GameObject:
   m_ObjectHideFlags: 0
