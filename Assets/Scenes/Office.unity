@@ -2857,7 +2857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3862467672160720706, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3999433128659681792, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_text
@@ -3024,7 +3024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291335936410763947, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7093233084272782635, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_Pivot.x
@@ -3192,9 +3192,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_UseReflectionProbes: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -3457,6 +3457,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6962714520704929083, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8020520449289463423, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 175
@@ -3464,6 +3468,10 @@ PrefabInstance:
     - target: {fileID: 8020520449289463423, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155642959717923479, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8941865319353341087, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_SizeDelta.x
