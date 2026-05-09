@@ -9,11 +9,11 @@ public class Question : MonoBehaviour
     [SerializeField]
     Answer second;
 
-    ClientController client;
+    Client client;
 
     void Start()
     {
-        client = GetComponentInParent<ClientController>();
+        client = GetComponentInParent<Client>();
     }
 
     public void SubmitAnswer(int position) => client.ReceiveAnswer(position == 0 ? first : second);
@@ -25,6 +25,6 @@ public class Question : MonoBehaviour
 [Serializable]
 public struct Answer
 {
-    public ClientReaction reaction;
+    public Client.Reaction reaction;
     public GameObject leadsTo;
 }

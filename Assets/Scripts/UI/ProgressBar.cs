@@ -2,7 +2,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProgressBarController : MonoBehaviour
+public class ProgressBar : MonoBehaviour
 {
     [SerializeField]
     GameObject markerPrefab;
@@ -47,14 +47,14 @@ public class ProgressBarController : MonoBehaviour
         public bool correct;
     }
 
-    public ClientSatisfaction Evaluate()
+    public Client.Satisfaction Evaluate()
     {
         if (records.Count(e => e.correct) == 0)
-            return ClientSatisfaction.ANGRY;
+            return Client.Satisfaction.ANGRY;
 
         if (records.Count(e => !e.correct) == 0)
-            return ClientSatisfaction.HAPPY;
+            return Client.Satisfaction.HAPPY;
             
-        return ClientSatisfaction.NEUTRAL;
+        return Client.Satisfaction.NEUTRAL;
     }
 }

@@ -4,17 +4,16 @@ public class Response : MonoBehaviour
 {
     [SerializeField]
     GameObject leadsTo;
-
-    ClientController client;
+    Client client;
 
     void Start()
     {
-        client = GetComponentInParent<ClientController>();
+        client = GetComponentInParent<Client>();
     }
 
     public void Submit() => client.ReceiveAnswer(new Answer()
     {
-        reaction = ClientReaction.NEUTRAL,
+        reaction = Client.Reaction.NEUTRAL,
         leadsTo = leadsTo
     });
 }

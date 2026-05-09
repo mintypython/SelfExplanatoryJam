@@ -25,7 +25,7 @@ public class ClientListController : MonoBehaviour
 
     public void NextClient()
     {
-        var progressBar = FindAnyObjectByType<ProgressBarController>();
+        var progressBar = FindAnyObjectByType<ProgressBar>();
         switch (progressBar.Evaluate())
         {
             // case ProgressBarController.ClientSatisfaction.HAPPY:

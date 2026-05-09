@@ -7,7 +7,7 @@ using UnityEngine.UI;
 /// Whenever you press a button response, this component handles the answer
 /// You don't need to do anything special per client, just give them this component
 /// </summary>
-public class ClientController : MonoBehaviour
+public class Client : MonoBehaviour
 {
     ClientListController clientList;
 
@@ -20,7 +20,7 @@ public class ClientController : MonoBehaviour
     Color neutral = Color.white;
     Color positive = Color.green;
     Color negative = Color.red;
-    ProgressBarController progress;
+    ProgressBar progress;
 
     void Awake()
     {
@@ -35,7 +35,7 @@ public class ClientController : MonoBehaviour
         // Order in the resource tree matters! Topmost question is the first one
         Clear();
         
-        progress = FindAnyObjectByType<ProgressBarController>();
+        progress = FindAnyObjectByType<ProgressBar>();
         progress.Initialize(phases.childCount);
 
         var firstQuestion = GetComponentInChildren<Question>(true);
@@ -85,11 +85,11 @@ public class ClientController : MonoBehaviour
     {
         switch (answer.reaction)
         {
-            case ClientReaction.POSITIVE:
+            case Reaction.POSITIVE:
                 body.GetComponent<Image>().color = positive;
                 break;
 
-            case ClientReaction.NEGATIVE:
+            case Reaction.NEGATIVE:
                 body.GetComponent<Image>().color = negative;
                 break;
             default:
@@ -98,19 +98,20 @@ public class ClientController : MonoBehaviour
         progress.SetProgress(position, true);
         NextQuestion(answer.leadsTo);
     }
+
+    [Serializable]
+    public enum Reaction
+    {
+        NEUTRAL,
+        POSITIVE,
+        NEGATIVE
+    }
+
+    public enum Satisfaction
+    {
+        NEUTRAL,
+        HAPPY,
+        ANGRY
+    }
 }
 
-[Serializable]
-public enum ClientReaction
-{
-    NEUTRAL,
-    POSITIVE,
-    NEGATIVE
-}
-
-public enum ClientSatisfaction
-{
-    NEUTRAL,
-    HAPPY,
-    ANGRY
-}
