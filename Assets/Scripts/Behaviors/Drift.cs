@@ -33,8 +33,8 @@ public class Drift : MonoBehaviour
         time += Time.deltaTime;
 
         var sine = new Vector2(
-            period.x == 0f ? 0 : (float)Math.Sin(time + offset.x * 2 * Math.PI / period.x),
-            period.y == 0f ? 0 : (float)Math.Sin(time + offset.y * 2 * Math.PI / period.y)
+            period.x == 0f ? 0 : (float)Math.Sin((time + offset.x) * 2 * Math.PI / period.x),
+            period.y == 0f ? 0 : (float)Math.Sin((time + offset.y) * 2 * Math.PI / period.y)
         );
         transform.localPosition = start + amplitude * sine;
     }

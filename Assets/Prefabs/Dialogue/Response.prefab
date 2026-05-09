@@ -346,6 +346,7 @@ GameObject:
   - component: {fileID: 3596666343818335499}
   - component: {fileID: 4965339408016119053}
   - component: {fileID: 4722507079987240502}
+  - component: {fileID: 6328007409785734477}
   m_Layer: 5
   m_Name: Graphic
   m_TagString: Untagged
@@ -426,6 +427,20 @@ MonoBehaviour:
   amplitude: 5
   period: 0.5
   active: 0
+--- !u!114 &6328007409785734477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9106213571496072270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6effd575756d2d54d90efa539bc6860e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Drift
+  amplitude: {x: 0, y: 15}
+  period: {x: 0, y: 2}
 --- !u!1001 &2610576694547641871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -500,7 +515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2687371812159478481, guid: 10be5ca2ffa33e440b112de9887250e1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2687371812159478481, guid: 10be5ca2ffa33e440b112de9887250e1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class Client : MonoBehaviour
 {
     ClientListController clientList;
+    DialogueSwap dialogueSwap;
 
     Transform body;
 
@@ -25,6 +26,7 @@ public class Client : MonoBehaviour
     void Awake()
     {
         clientList = GetComponentInParent<ClientListController>();
+        dialogueSwap = GetComponentInChildren<DialogueSwap>();
 
         body = transform.Find("Body");
         phases = transform.Find("Phases");
@@ -33,44 +35,24 @@ public class Client : MonoBehaviour
     void OnEnable()
     {
         // Order in the resource tree matters! Topmost question is the first one
-        Clear();
+        dialogueSwap.Clear();
         
         progress = FindAnyObjectByType<ProgressBar>();
         progress.Initialize(phases.childCount);
 
         var firstQuestion = GetComponentInChildren<Question>(true);
-        firstQuestion.gameObject.SetActive(true);
-    }
-
-    void Clear()
-    {
-        var questions = GetComponentsInChildren<Question>();
-        foreach (var question in questions)
-        {
-            question.gameObject.SetActive(false);
-        }
-
-        var responses = GetComponentsInChildren<Response>();
-        foreach (var response in responses)
-        {
-            response.gameObject.SetActive(false);
-        }
+        GetComponentInChildren<DialogueSwap>().InstantSwap(firstQuestion.gameObject);
     }
 
     public void NextQuestion(GameObject next)
     {
         body.GetComponent<Image>().color = neutral;
-        Debug.Log("Moving on to the next question");
         position++;
 
-        Clear();
+        GetComponentInChildren<DialogueSwap>().Swap(next);
         if (next == null)
         {
             clientList.NextClient();
-        }
-        else
-        {
-            next.SetActive(true);
         }
     }
     
