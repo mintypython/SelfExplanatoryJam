@@ -10,12 +10,19 @@ public class DialogueSwap : MonoBehaviour
     float duration = 1;
 
     bool swapping = false;
+
     GameObject to;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         group = GetComponent<CanvasGroup>();
+    }
+
+    void OnEnable()
+    {
+        swapping = false;
+        group.alpha = 0f;
     }
 
     void Update()
@@ -34,7 +41,7 @@ public class DialogueSwap : MonoBehaviour
         if (prev < 0.5 && percent >= 0.5)
         {
             Clear();
-            to.SetActive(true);
+            to?.SetActive(true);
             group.interactable = true;
         }
         else if (percent >= 1)
@@ -51,6 +58,7 @@ public class DialogueSwap : MonoBehaviour
         swapping = true;
         this.to = to;
         group.interactable = false;
+        group.alpha = 0f;
     }
 
     public void InstantSwap(GameObject to)
@@ -60,8 +68,9 @@ public class DialogueSwap : MonoBehaviour
         time = duration / 2;
         swapping = true;
         this.to = to;
-        to.SetActive(true);
+        to?.SetActive(true);
         group.interactable = true;
+        group.alpha = 0f;
     }
 
     public void Clear()

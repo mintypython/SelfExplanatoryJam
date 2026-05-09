@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 /// <summary>
@@ -10,9 +11,33 @@ public class ClientListController : MonoBehaviour
     [SerializeField]
     int position = 0;
 
+    Client current;
+
     void Start()
     {
+        ClearClients();
+
+        var swoops = GetComponentsInChildren<Swoop>(true);
+        foreach (var swoop in swoops)
+        {
+            swoop.Initialize();
+            swoop.ToStart();
+        }
+        StartCoroutine(DelayedStart());
+    }
+
+    IEnumerator DelayedStart()
+    {
+        yield return new WaitForSeconds(1);
         UpdateClients();
+    }
+
+    void ClearClients()
+    {
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+        }
     }
 
     void UpdateClients()

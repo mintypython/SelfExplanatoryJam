@@ -19,7 +19,6 @@ public class Drift : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        Debug.Log($"Local position: {transform.localPosition}");
         start = transform.localPosition;
         offset = new Vector2(
             UnityEngine.Random.Range(0f, period.x),

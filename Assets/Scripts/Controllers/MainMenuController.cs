@@ -1,16 +1,19 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void StartGame()
     {
-        
+        StartCoroutine(SmoothLoad());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    IEnumerator SmoothLoad() {
+        var operation = SceneManager.LoadSceneAsync("Office", LoadSceneMode.Single);
+
+        while (!operation.isDone) {
+            yield return null;
+        }
     }
 }

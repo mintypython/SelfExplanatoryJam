@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,9 @@ public class Client : MonoBehaviour
 {
     ClientListController clientList;
     DialogueSwap dialogueSwap;
+
+    Swoop chairSwoop;
+    Swoop bodySwoop;
 
     Transform body;
 
@@ -28,20 +32,45 @@ public class Client : MonoBehaviour
         clientList = GetComponentInParent<ClientListController>();
         dialogueSwap = GetComponentInChildren<DialogueSwap>();
 
+        var swoops = GetComponentsInChildren<Swoop>(true);
+        chairSwoop = swoops[0];
+        bodySwoop = swoops[1];
+
         body = transform.Find("Body");
         phases = transform.Find("Phases");
-    }
 
+        progress = FindAnyObjectByType<ProgressBar>();
+    }
+    
     void OnEnable()
     {
         // Order in the resource tree matters! Topmost question is the first one
         dialogueSwap.Clear();
         
-        progress = FindAnyObjectByType<ProgressBar>();
         progress.Initialize(phases.childCount);
+        Action startDialogue = () =>
+        {
+            var firstQuestion = GetComponentInChildren<Question>(true);
+            GetComponentInChildren<DialogueSwap>().InstantSwap(firstQuestion.gameObject);
+        };
 
-        var firstQuestion = GetComponentInChildren<Question>(true);
-        GetComponentInChildren<DialogueSwap>().InstantSwap(firstQuestion.gameObject);
+        Action clientArrives = () => {
+            bodySwoop.In(startDialogue, 0.75f);
+        };
+
+        position = 0;
+
+        
+        chairSwoop.ToStart();
+        bodySwoop.ToStart();
+        if (chairSwoop.gameObject.activeSelf)
+        {
+            chairSwoop.In(clientArrives, 0.5f);
+        }
+        else
+        {
+            clientArrives();
+        }
     }
 
     public void NextQuestion(GameObject next)
@@ -52,8 +81,18 @@ public class Client : MonoBehaviour
         GetComponentInChildren<DialogueSwap>().Swap(next);
         if (next == null)
         {
-            clientList.NextClient();
+            bodySwoop.Out();
+            chairSwoop.Out();
+            dialogueSwap.Swap(null);
+
+            StartCoroutine(DelayedEnd());
         }
+    }
+
+    IEnumerator DelayedEnd()
+    {
+        yield return new WaitForSeconds(2);
+        clientList.NextClient();
     }
     
     // We can add an animation here to make the client walk out or something when their convo is over
