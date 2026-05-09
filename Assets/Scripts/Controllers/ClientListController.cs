@@ -28,13 +28,13 @@ public class ClientListController : MonoBehaviour
         var progressBar = FindAnyObjectByType<ProgressBarController>();
         switch (progressBar.Evaluate())
         {
-            case ProgressBarController.ClientSatisfaction.HAPPY:
-                Debug.Log("The client was very satisfied!");
-                break;
+            // case ProgressBarController.ClientSatisfaction.HAPPY:
+            //     Debug.Log("The client was very satisfied!");
+            //     break;
 
-            case ProgressBarController.ClientSatisfaction.ANGRY:
-                Debug.Log("The client was very angry with you!");
-                break;
+            // case ProgressBarController.ClientSatisfaction.ANGRY:
+            //     Debug.Log("The client was very angry with you!");
+            //     break;
 
             default:
                 break;

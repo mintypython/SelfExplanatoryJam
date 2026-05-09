@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,11 +14,12 @@ public class ClientController : MonoBehaviour
     Transform body;
 
     int position = 0;
+
     Transform phases;
 
     Color neutral = Color.white;
-    Color correct = Color.green;
-    Color incorrect = Color.red;
+    Color positive = Color.green;
+    Color negative = Color.red;
     ProgressBarController progress;
 
     void Awake()
@@ -31,31 +33,44 @@ public class ClientController : MonoBehaviour
     void OnEnable()
     {
         // Order in the resource tree matters! Topmost question is the first one
-        UpdateProgress();
-
+        Clear();
+        
         progress = FindAnyObjectByType<ProgressBarController>();
         progress.Initialize(phases.childCount);
+
+        var firstQuestion = GetComponentInChildren<Question>(true);
+        firstQuestion.gameObject.SetActive(true);
     }
 
-    void UpdateProgress()
+    void Clear()
     {
-        // Even if we leave a few questions active in the editor, this code will deactivate them all
-        for (var i = 0; i < phases.childCount; i++)
+        var questions = GetComponentsInChildren<Question>();
+        foreach (var question in questions)
         {
-            phases.GetChild(i).gameObject.SetActive(i == position);
+            question.gameObject.SetActive(false);
+        }
+
+        var responses = GetComponentsInChildren<Response>();
+        foreach (var response in responses)
+        {
+            response.gameObject.SetActive(false);
         }
     }
 
-    public void NextQuestion()
+    public void NextQuestion(GameObject next)
     {
         body.GetComponent<Image>().color = neutral;
         Debug.Log("Moving on to the next question");
         position++;
-        UpdateProgress();
 
-        if (position >= phases.childCount)
+        Clear();
+        if (next == null)
         {
             clientList.NextClient();
+        }
+        else
+        {
+            next.SetActive(true);
         }
     }
     
@@ -66,17 +81,36 @@ public class ClientController : MonoBehaviour
         FindAnyObjectByType<ClientListController>().NextClient();
     }
 
-    public void Right()
+    public void ReceiveAnswer(Answer answer)
     {
-        Debug.Log("That's the correct answer!");
-        body.GetComponent<Image>().color = correct;
-        progress.SetProgress(position, true);
-    }
+        switch (answer.reaction)
+        {
+            case ClientReaction.POSITIVE:
+                body.GetComponent<Image>().color = positive;
+                break;
 
-    public void Wrong()
-    {
-        Debug.Log("That's the wrong answer!");
-        body.GetComponent<Image>().color = incorrect;
-        progress.SetProgress(position, false);
+            case ClientReaction.NEGATIVE:
+                body.GetComponent<Image>().color = negative;
+                break;
+            default:
+                break;
+        }
+        progress.SetProgress(position, true);
+        NextQuestion(answer.leadsTo);
     }
+}
+
+[Serializable]
+public enum ClientReaction
+{
+    NEUTRAL,
+    POSITIVE,
+    NEGATIVE
+}
+
+public enum ClientSatisfaction
+{
+    NEUTRAL,
+    HAPPY,
+    ANGRY
 }

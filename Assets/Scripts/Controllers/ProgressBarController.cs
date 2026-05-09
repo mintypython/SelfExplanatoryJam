@@ -30,8 +30,7 @@ public class ProgressBarController : MonoBehaviour
         for (var i = 0; i < count; i++)
         {
             var x = left + width * (i + 1) / (count + 1);
-
-            Debug.Log($"Position is {rect.anchorMin.x}, {rect.anchorMin.y}\nSpawn at {x}");
+            
             records[i].marker = Instantiate(markerPrefab, transform);
             records[i].marker.transform.localPosition = new Vector3(x, 0f, 0f);
         }
@@ -57,12 +56,5 @@ public class ProgressBarController : MonoBehaviour
             return ClientSatisfaction.HAPPY;
             
         return ClientSatisfaction.NEUTRAL;
-    }
-
-    public enum ClientSatisfaction
-    {
-        NEUTRAL,
-        HAPPY,
-        ANGRY
     }
 }

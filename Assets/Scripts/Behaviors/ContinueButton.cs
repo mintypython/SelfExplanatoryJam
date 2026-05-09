@@ -11,12 +11,6 @@ public class ContinueButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         wiggle = GetComponentInChildren<Wiggle>(); 
     }
 
-    public void Submit()
-    {
-        var client = GetComponentInParent<ClientController>();
-        client.NextQuestion();
-    }
-
     public void OnPointerEnter(PointerEventData eventData)
     {
         wiggle.active = true;

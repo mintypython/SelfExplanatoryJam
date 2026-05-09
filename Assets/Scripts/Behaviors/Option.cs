@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class Option : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField]
-    private Answer answer;
+    int position = 0;
 
     Wiggle wiggle; //This causes the text to wiggle? - Syd
     // Yep! The wiggle class makes an object wiggle back and worth if you set its active variable to true
@@ -17,7 +17,7 @@ public class Option : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void Submit()
     {
         var question = GetComponentInParent<Question>();
-        question.SubmitAnswer(answer);
+        question.SubmitAnswer(position);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
