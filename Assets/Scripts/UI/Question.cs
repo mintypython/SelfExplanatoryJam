@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Question : MonoBehaviour
@@ -14,6 +15,22 @@ public class Question : MonoBehaviour
     void Start()
     {
         client = GetComponentInParent<Client>();
+    }
+
+    void OnEnable()
+    {
+        var questions = transform.Find("Options");
+
+        var positions = new List<Vector2>();
+        foreach (Transform question in questions)
+        {
+            positions.Add((Vector2)question.localPosition);
+        }
+
+        for (var i = 0; i < questions.childCount && i < positions.Count; i++)
+        {
+            questions.GetChild(i).localPosition = positions[i];
+        }
     }
 
     public void SubmitAnswer(int position) => client.ReceiveAnswer(position == 0 ? first : second);

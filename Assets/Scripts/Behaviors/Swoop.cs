@@ -119,6 +119,8 @@ public class Swoop : MonoBehaviour
         time = 0;
         duration = inDuration;
         swooping = false;
+
+        Debug.Log($"{name} is at {origin} Starting at: {start}");
     }
 
     public void ToEnd()

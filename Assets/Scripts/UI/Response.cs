@@ -3,7 +3,7 @@ using UnityEngine;
 public class Response : MonoBehaviour
 {
     [SerializeField]
-    GameObject leadsTo;
+    GameObject leadsTo = null;
     Client client;
 
     void Start()
