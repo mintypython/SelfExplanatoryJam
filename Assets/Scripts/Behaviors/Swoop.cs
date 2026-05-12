@@ -28,6 +28,10 @@ public class Swoop : MonoBehaviour
 
     bool initialized = false;
 
+    [SerializeField]
+    bool body = false;
+
+    private readonly Ease.Shape backShape = Ease.Shapes.OUT_BACK;
     private readonly Ease.Shape inShape = Ease.Shapes.OUT_ELASTIC;
     private readonly Ease.Shape outShape = Ease.Shapes.IN_SINE;
 
@@ -83,7 +87,7 @@ public class Swoop : MonoBehaviour
     public void In(Action action = null, float at = 1.0f)
     {
         Initialize();
-        shape = inShape;
+        shape = body ? backShape : inShape;
         start = origin + offset;
         end = origin;
 

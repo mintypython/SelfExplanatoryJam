@@ -59,7 +59,10 @@ namespace Ease {
 
         public static float OUT_BACK(float progress)
         {
-            return 1f;
+            const double c1 = 1.70158f;
+            const double c3 = c1 + 1;
+
+            return (float)(1 + c3 * Math.Pow(progress - 1, 3) + c1 * Math.Pow(progress - 1, 2));
         }
     }
 }

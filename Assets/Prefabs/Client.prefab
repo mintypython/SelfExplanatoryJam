@@ -212,6 +212,7 @@ MonoBehaviour:
   offset: {x: 0, y: -800}
   inDuration: 1.5
   outDuration: 1
+  body: 0
 --- !u!1 &4892573457993085334
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,8 +448,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Swoop
   offset: {x: -600, y: 0}
-  inDuration: 1.5
+  inDuration: 0.75
   outDuration: 1
+  body: 1
 --- !u!114 &8143531144083775174
 MonoBehaviour:
   m_ObjectHideFlags: 0
