@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 86c5f413dca120e438488e855a309cfa
+guid: 186b9d9cd243df641bd4b01a402be249
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4842461897713276177
-    second: worm2 1_0
+      213: 753078126791780259
+    second: wormy_worm_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: worm2 1_0
+      name: wormy_worm_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 5
-        width: 700
-        height: 879
+        x: 185
+        y: 36
+        width: 435
+        height: 811
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: feaaf6c7f8e1cccb0800000000000000
-      internalID: -4842461897713276177
+      spriteID: 3a76a8bf098737a00800000000000000
+      internalID: 753078126791780259
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      worm2 1_0: -4842461897713276177
+      wormy_worm_0: 753078126791780259
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

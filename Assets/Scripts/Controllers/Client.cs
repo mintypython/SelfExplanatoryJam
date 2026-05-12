@@ -47,7 +47,7 @@ public class Client : MonoBehaviour
         // Order in the resource tree matters! Topmost question is the first one
         dialogueSwap.Clear();
         
-        progress.Initialize(phases.childCount);
+        progress?.Initialize(phases.childCount);
         Action startDialogue = () =>
         {
             var firstQuestion = GetComponentInChildren<Question>(true);
@@ -116,7 +116,7 @@ public class Client : MonoBehaviour
             default:
                 break;
         }
-        progress.SetProgress(position, true);
+        progress?.SetProgress(position, true);
         NextQuestion(answer.leadsTo);
     }
 

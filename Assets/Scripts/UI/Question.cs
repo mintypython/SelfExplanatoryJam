@@ -10,6 +10,9 @@ public class Question : MonoBehaviour
     [SerializeField]
     Answer second;
 
+    [SerializeField]
+    Sprite sprite;
+
     Client client;
 
     void Start()
@@ -31,6 +34,8 @@ public class Question : MonoBehaviour
         {
             questions.GetChild(i).localPosition = positions[i];
         }
+
+        GetComponentInParent<Client>().GetComponentInChildren<Body>().ChangeSprite(sprite);
     }
 
     public void SubmitAnswer(int position) => client.ReceiveAnswer(position == 0 ? first : second);

@@ -67,8 +67,9 @@ public class DialogueSwap : MonoBehaviour
         group = group ?? GetComponent<CanvasGroup>();
         time = duration / 2;
         swapping = true;
+        
+        to.SetActive(true);
         this.to = to;
-        to?.SetActive(true);
         group.interactable = true;
         group.alpha = 0f;
     }

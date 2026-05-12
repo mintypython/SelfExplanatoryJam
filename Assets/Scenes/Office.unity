@@ -245,7 +245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2009037466488188646, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2566600798170428839, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_IsActive
@@ -258,7 +258,7 @@ PrefabInstance:
     - target: {fileID: 2815374948527621320, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1601509788642837179, guid: 1688e29f61e95b14f9a59ed9f040f2f3, type: 3}
+      objectReference: {fileID: -4801356528187462394, guid: 1303a44d7d924514990ad2e5ab6bc983, type: 3}
     - target: {fileID: 2815374948527621320, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -275,6 +275,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8327423602884326219, guid: b4b34acca811b3944ac1bf85b6039d69, type: 3}
+    - target: {fileID: 3612344782606641673, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3612344782606641673, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -628
+      objectReference: {fileID: 0}
     - target: {fileID: 3888950589931968542, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: offset.x
       value: -900
@@ -316,20 +324,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8941865319353341087, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941865319353341087, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 678.8687
+      value: 761.29
       objectReference: {fileID: 0}
     - target: {fileID: 8941865319353341087, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 690.8171
+      value: 774.7
       objectReference: {fileID: 0}
     - target: {fileID: 8941865319353341087, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -593.32
+      value: -579.35
       objectReference: {fileID: 0}
     - target: {fileID: 8941865319353341087, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -47
+      value: -517
       objectReference: {fileID: 0}
     - target: {fileID: 9099462913056373245, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_Type
@@ -396,6 +408,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1249490349}
     m_Modifications:
+    - target: {fileID: 395688076613351208, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: -4842461897713276177, guid: 86c5f413dca120e438488e855a309cfa, type: 3}
     - target: {fileID: 395688076613351208, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: first.leadsTo
       value: 
@@ -1100,7 +1116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &716231885
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1184,6 +1200,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5305902714132458015, guid: 9a9f8ba9bc313604fbf24c30420f6825, type: 3}
+    - target: {fileID: 2464866235615292536, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 8927313531660944556, guid: ccceef2463bb97840bdc365029e2b82c, type: 3}
     - target: {fileID: 5291335936410763947, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_Name
       value: Date
@@ -1713,6 +1733,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6389531478595455693, guid: 9a9f8ba9bc313604fbf24c30420f6825, type: 3}
+    - target: {fileID: 2464866235615292536, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 8927313531660944556, guid: ccceef2463bb97840bdc365029e2b82c, type: 3}
     - target: {fileID: 5291335936410763947, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_Name
       value: Science
@@ -2421,6 +2445,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2125781477667684204, guid: 9a9f8ba9bc313604fbf24c30420f6825, type: 3}
+    - target: {fileID: 2464866235615292536, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 753078126791780259, guid: 186b9d9cd243df641bd4b01a402be249, type: 3}
     - target: {fileID: 5291335936410763947, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_Name
       value: WormLove

@@ -82,6 +82,7 @@ public class Swoop : MonoBehaviour
 
     public void In(Action action = null, float at = 1.0f)
     {
+        Initialize();
         shape = inShape;
         start = origin + offset;
         end = origin;
@@ -97,6 +98,7 @@ public class Swoop : MonoBehaviour
 
     public void Out(Action action = null, float at = 1.0f)
     {
+        Initialize();
         shape = outShape;
         start = origin + offset;
         end = origin;
@@ -112,6 +114,7 @@ public class Swoop : MonoBehaviour
     
     public void ToStart()
     {
+        Initialize();
         start = origin + offset;
         end = origin;
 
@@ -119,12 +122,11 @@ public class Swoop : MonoBehaviour
         time = 0;
         duration = inDuration;
         swooping = false;
-
-        Debug.Log($"{name} is at {origin} Starting at: {start}");
     }
 
     public void ToEnd()
     {
+        Initialize();
         start = origin;
         end = origin + offset;
 

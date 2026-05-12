@@ -51,24 +51,11 @@ public class ClientListController : MonoBehaviour
     public void NextClient()
     {
         var progressBar = FindAnyObjectByType<ProgressBar>();
-        switch (progressBar.Evaluate())
-        {
-            // case ProgressBarController.ClientSatisfaction.HAPPY:
-            //     Debug.Log("The client was very satisfied!");
-            //     break;
-
-            // case ProgressBarController.ClientSatisfaction.ANGRY:
-            //     Debug.Log("The client was very angry with you!");
-            //     break;
-
-            default:
-                break;
-        }
         position++;
         UpdateClients();
         if (position >= transform.childCount)
         {
-            progressBar.gameObject.SetActive(false);
+            progressBar?.gameObject?.SetActive(false);
             Debug.Log("The game is over!");
         }
     }
