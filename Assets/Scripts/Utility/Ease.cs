@@ -64,5 +64,24 @@ namespace Ease {
 
             return (float)(1 + c3 * Math.Pow(progress - 1, 3) + c1 * Math.Pow(progress - 1, 2));
         }
+
+        public static float OUT_BOUNCE(float progress)
+        {
+            const double n1 = 7.5625;
+            const double d1 = 2.75;
+
+            if (progress < 1 / d1) {
+                return (float)(n1 * progress * progress);
+            } else if (progress < 2 / d1) {
+                progress -= (float)(1.5 / d1);
+                return (float)(n1 * progress * progress + 0.75);
+            } else if (progress < 2.5 / d1) {
+                progress -= (float)(2.25 / d1);
+                return (float)(n1 * progress * progress + 0.9375);
+            } else {
+                progress -= (float)(2.625 / d1);
+                return (float)(n1 * progress * progress + 0.984375);
+            }
+        }
     }
 }

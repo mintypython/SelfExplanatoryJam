@@ -55,17 +55,17 @@ public class Client : MonoBehaviour
         };
 
         Action clientArrives = () => {
-            bodySwoop.In(startDialogue, 0.75f);
+            bodySwoop.Out(startDialogue, 0.75f);
         };
 
         position = 0;
 
         
-        chairSwoop.ToStart();
-        bodySwoop.ToStart();
+        chairSwoop.ToEnd();
+        bodySwoop.ToEnd();
         if (chairSwoop.gameObject.activeSelf)
         {
-            chairSwoop.In(clientArrives, 0.5f);
+            chairSwoop.Out(clientArrives, 0.5f);
         }
         else
         {
@@ -81,8 +81,8 @@ public class Client : MonoBehaviour
         GetComponentInChildren<DialogueSwap>().Swap(next);
         if (next == null)
         {
-            bodySwoop.Out();
-            chairSwoop.Out();
+            bodySwoop.In();
+            chairSwoop.In();
             dialogueSwap.Swap(null);
 
             StartCoroutine(DelayedEnd());
@@ -135,4 +135,3 @@ public class Client : MonoBehaviour
         ANGRY
     }
 }
-

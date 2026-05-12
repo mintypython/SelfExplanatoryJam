@@ -29,11 +29,10 @@ public class Swoop : MonoBehaviour
     bool initialized = false;
 
     [SerializeField]
-    bool body = false;
+    SWOOP_TYPE inShape;
 
-    private readonly Ease.Shape backShape = Ease.Shapes.OUT_BACK;
-    private readonly Ease.Shape inShape = Ease.Shapes.OUT_ELASTIC;
-    private readonly Ease.Shape outShape = Ease.Shapes.IN_SINE;
+    [SerializeField]
+    SWOOP_TYPE outShape;
 
     private Ease.Shape shape;
 
@@ -50,11 +49,10 @@ public class Swoop : MonoBehaviour
             return;
         }
 
-        shape = inShape;
+        shape = GetShape(inShape);
         time = 0f;
         origin = transform.localPosition;
         initialized = true;
-        ToStart();
     }
 
     // Update is called once per frame
@@ -87,12 +85,12 @@ public class Swoop : MonoBehaviour
     public void In(Action action = null, float at = 1.0f)
     {
         Initialize();
-        shape = body ? backShape : inShape;
-        start = origin + offset;
-        end = origin;
-
-        ToStart();
+        shape = GetShape(inShape);
+        start = transform.localPosition;
+        end = origin + offset;
         swooping = true;
+        time = 0f;
+        duration = inDuration;
         if (action != null)
         {
             OnEnd = action;
@@ -103,12 +101,12 @@ public class Swoop : MonoBehaviour
     public void Out(Action action = null, float at = 1.0f)
     {
         Initialize();
-        shape = outShape;
-        start = origin + offset;
+        shape = GetShape(outShape);
+        start = transform.localPosition;
         end = origin;
-
-        ToEnd();
         swooping = true;
+        time = 0f;
+        duration = outDuration;
         if (action != null)
         {
             OnEnd = action;
@@ -119,8 +117,8 @@ public class Swoop : MonoBehaviour
     public void ToStart()
     {
         Initialize();
-        start = origin + offset;
-        end = origin;
+        start = origin;
+        end = origin + offset;
 
         transform.localPosition = start;
         time = 0;
@@ -131,12 +129,38 @@ public class Swoop : MonoBehaviour
     public void ToEnd()
     {
         Initialize();
-        start = origin;
-        end = origin + offset;
+        start = origin + offset;
+        end = origin;
 
         transform.localPosition = start;
         time = 0;
         duration = outDuration;
         swooping = false;
     }
+
+    public Ease.Shape GetShape(SWOOP_TYPE type)
+    {
+        switch (type)
+        {
+            case SWOOP_TYPE.ELASTIC:
+                return Ease.Shapes.OUT_ELASTIC;
+
+            case SWOOP_TYPE.BACK:
+                return Ease.Shapes.OUT_BACK;
+
+            case SWOOP_TYPE.BOUNCE:
+                return Ease.Shapes.OUT_BOUNCE;
+
+            default:
+                return Ease.Shapes.IN_SINE;
+        }
+    }
+}
+
+public enum SWOOP_TYPE
+{
+    ELASTIC,
+    SINE,
+    BACK,
+    BOUNCE
 }

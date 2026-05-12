@@ -21,7 +21,7 @@ public class ClientListController : MonoBehaviour
         foreach (var swoop in swoops)
         {
             swoop.Initialize();
-            swoop.ToStart();
+            swoop.ToEnd();
         }
         StartCoroutine(DelayedStart());
     }
