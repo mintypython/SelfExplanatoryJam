@@ -210,10 +210,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Swoop
   offset: {x: 0, y: -800}
-  inDuration: 1.5
-  outDuration: 1
-  inShape: 0
-  outShape: 1
+  inDuration: 1
+  outDuration: 1.5
+  inShape: 1
+  outShape: 0
 --- !u!1 &4892573457993085334
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,11 +448,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ee447fdc5492dd48a05ba79062c6ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Swoop
-  offset: {x: -600, y: 0}
-  inDuration: 0.75
-  outDuration: 1
-  inShape: 2
-  outShape: 1
+  offset: {x: -750, y: 0}
+  inDuration: 1
+  outDuration: 0.75
+  inShape: 1
+  outShape: 2
 --- !u!114 &8143531144083775174
 MonoBehaviour:
   m_ObjectHideFlags: 0
