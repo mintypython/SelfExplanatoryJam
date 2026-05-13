@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 315ba9a76095c4246bbed8700dc30fbd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1343155629107484567
+    second: doctor_dialogue_0
+  - first:
+      213: 6375568306365686668
+    second: doctor_dialogue_1
+  - first:
+      213: -1164244760209325825
+    second: doctor_dialogue_2
+  - first:
+      213: -7157379718738337203
+    second: doctor_dialogue_3
+  - first:
+      213: 7829311870648756284
+    second: doctor_dialogue_4
+  - first:
+      213: 3344537066048320429
+    second: doctor_dialogue_5
+  - first:
+      213: -471199943513469292
+    second: doctor_dialogue_6
+  - first:
+      213: -9032638777917197155
+    second: doctor_dialogue_7
+  - first:
+      213: 2372425581805705961
+    second: doctor_dialogue_8
+  - first:
+      213: -5491160256987559629
+    second: doctor_dialogue_9
+  - first:
+      213: -1486184867812715670
+    second: doctor_dialogue_10
+  - first:
+      213: 3658372541230562514
+    second: doctor_dialogue_11
+  - first:
+      213: -3810385858824075420
+    second: doctor_dialogue_12
+  - first:
+      213: 7095606498098818857
+    second: doctor_dialogue_13
+  - first:
+      213: -1867002038916242355
+    second: doctor_dialogue_14
+  - first:
+      213: -3445099889328675767
+    second: doctor_dialogue_15
+  - first:
+      213: 3252829433872461870
+    second: doctor_dialogue_16
+  - first:
+      213: 5440279574581035320
+    second: doctor_dialogue_17
+  - first:
+      213: -6292761885146886555
+    second: doctor_dialogue_18
+  - first:
+      213: -8446684757066348032
+    second: doctor_dialogue_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: doctor_dialogue_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 2371
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9686bf852172c5de0800000000000000
+      internalID: -1343155629107484567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_1
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 2371
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c836a2e68919a7850800000000000000
+      internalID: 6375568306365686668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_2
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 2371
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff00d1c1f85c7dfe0800000000000000
+      internalID: -1164244760209325825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_3
+      rect:
+        serializedVersion: 2
+        x: 3356
+        y: 2371
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4224063111ebac90800000000000000
+      internalID: -7157379718738337203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1843
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38a4c53aad47ac60800000000000000
+      internalID: 7829311870648756284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_5
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 1843
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3ffefcdbe2a6e20800000000000000
+      internalID: 3344537066048320429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_6
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 1843
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e02bcd526f579f0800000000000000
+      internalID: -471199943513469292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_7
+      rect:
+        serializedVersion: 2
+        x: 3356
+        y: 1843
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d94b3d173ee95a280800000000000000
+      internalID: -9032638777917197155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1345
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea149b3f7c8ce020800000000000000
+      internalID: 2372425581805705961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_9
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1345
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3398385f6da7bc3b0800000000000000
+      internalID: -5491160256987559629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_10
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 1345
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a635673acb2006be0800000000000000
+      internalID: -1486184867812715670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_11
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 1345
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc3710817625c230800000000000000
+      internalID: 3658372541230562514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_12
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 817
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4678e9bef3ace1bc0800000000000000
+      internalID: -3810385858824075420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_13
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 817
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f22211488a87260800000000000000
+      internalID: 7095606498098818857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_14
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 817
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44a77399831716e0800000000000000
+      internalID: -1867002038916242355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_15
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 817
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944a3d057eb8030d0800000000000000
+      internalID: -3445099889328675767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 271
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2037e8c22f542d20800000000000000
+      internalID: 3252829433872461870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_17
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 271
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83147b10371cf7b40800000000000000
+      internalID: 5440279574581035320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_18
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 271
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ec3bbe76e9ba8a0800000000000000
+      internalID: -6292761885146886555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doctor_dialogue_19
+      rect:
+        serializedVersion: 2
+        x: 3356
+        y: 271
+        width: 977
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a8a5547f857ca80800000000000000
+      internalID: -8446684757066348032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      doctor_dialogue_0: -1343155629107484567
+      doctor_dialogue_1: 6375568306365686668
+      doctor_dialogue_10: -1486184867812715670
+      doctor_dialogue_11: 3658372541230562514
+      doctor_dialogue_12: -3810385858824075420
+      doctor_dialogue_13: 7095606498098818857
+      doctor_dialogue_14: -1867002038916242355
+      doctor_dialogue_15: -3445099889328675767
+      doctor_dialogue_16: 3252829433872461870
+      doctor_dialogue_17: 5440279574581035320
+      doctor_dialogue_18: -6292761885146886555
+      doctor_dialogue_19: -8446684757066348032
+      doctor_dialogue_2: -1164244760209325825
+      doctor_dialogue_3: -7157379718738337203
+      doctor_dialogue_4: 7829311870648756284
+      doctor_dialogue_5: 3344537066048320429
+      doctor_dialogue_6: -471199943513469292
+      doctor_dialogue_7: -9032638777917197155
+      doctor_dialogue_8: 2372425581805705961
+      doctor_dialogue_9: -5491160256987559629
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

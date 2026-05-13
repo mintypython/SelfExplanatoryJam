@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Question : MonoBehaviour
@@ -30,11 +31,13 @@ public class Question : MonoBehaviour
             positions.Add((Vector2)question.localPosition);
         }
 
+        positions = positions.OrderBy(_ => UnityEngine.Random.value).ToList();
+
         for (var i = 0; i < questions.childCount && i < positions.Count; i++)
         {
             questions.GetChild(i).localPosition = positions[i];
         }
-
+        
         GetComponentInParent<Client>().GetComponentInChildren<Body>().ChangeSprite(sprite);
     }
 
