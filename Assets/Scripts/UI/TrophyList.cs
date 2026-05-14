@@ -4,10 +4,16 @@ using UnityEngine.UI;
 
 public class TrophyList : MonoBehaviour
 {
+    [SerializeField]
+    GameObject icon;
+
+    Transform unlockPanel;
+
     private Dictionary<string, Trophy> trophies;
 
     void Awake()
     {
+        unlockPanel = GameObject.Find("UnlockPanel").transform;
         trophies = new();
 
         var images = GetComponentsInChildren<Image>(true);
@@ -35,6 +41,9 @@ public class TrophyList : MonoBehaviour
         Debug.Log($"Unlocked trophy {name}");
         trophy.unlocked = true;
         trophy.image.color = Color.white;
+
+        var instance = Instantiate(icon, unlockPanel);
+        instance.transform.Find("Icon").GetComponent<Image>().sprite = trophy.image.sprite;
     }
 
     protected struct Trophy
