@@ -28,7 +28,7 @@ public class ClientListController : MonoBehaviour
 
     IEnumerator DelayedStart()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         UpdateClients();
     }
 
@@ -58,5 +58,11 @@ public class ClientListController : MonoBehaviour
             progressBar?.gameObject?.SetActive(false);
             Debug.Log("The game is over!");
         }
+    }
+
+    public void Restart()
+    {
+        position = 0;
+        UpdateClients();
     }
 }

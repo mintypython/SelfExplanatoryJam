@@ -41,7 +41,16 @@ public class DialogueSwap : MonoBehaviour
         if (prev < 0.5 && percent >= 0.5)
         {
             Clear();
-            to?.SetActive(true);
+
+            if (to != null)
+            {
+                to.SetActive(true);
+                var unlock = to.GetComponent<UnlockTrophy>();
+                if (unlock != null)
+                {
+                    unlock.Activate();
+                }
+            }
             group.interactable = true;
         }
         else if (percent >= 1)
@@ -70,6 +79,13 @@ public class DialogueSwap : MonoBehaviour
         
         to.SetActive(true);
         this.to = to;
+
+        var unlock = to.GetComponent<UnlockTrophy>();
+        if (unlock != null)
+        {
+            unlock.Activate();
+        }
+
         group.interactable = true;
         group.alpha = 0f;
     }

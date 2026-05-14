@@ -51,7 +51,14 @@ public class Client : MonoBehaviour
         Action startDialogue = () =>
         {
             var firstQuestion = GetComponentInChildren<Question>(true);
-            GetComponentInChildren<DialogueSwap>().InstantSwap(firstQuestion.gameObject);
+            if (firstQuestion == null)
+            {
+                NextQuestion(null);
+            }
+            else
+            {
+                GetComponentInChildren<DialogueSwap>().InstantSwap(firstQuestion.gameObject);
+            }
         };
 
         Action clientArrives = () => {
