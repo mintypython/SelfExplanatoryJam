@@ -13,13 +13,11 @@ public class SettingsPanel : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("A");
         swoop.In();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-         Debug.Log("B");
         swoop.Out();
     }
 }
