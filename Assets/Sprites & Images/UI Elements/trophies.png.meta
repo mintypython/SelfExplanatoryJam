@@ -1,40 +1,55 @@
 fileFormatVersion: 2
-guid: 9a9f8ba9bc313604fbf24c30420f6825
+guid: 2273cc318638c27469225c377507ed2d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6320310400458065883
-    second: worm_dialogue_0
+      213: 6728613158726471044
+    second: trophies_0
   - first:
-      213: -2125781477667684204
-    second: worm_dialogue_1
+      213: 271426600780745483
+    second: trophies_1
   - first:
-      213: 5305902714132458015
-    second: worm_dialogue_2
+      213: 7888873562736537362
+    second: trophies_2
   - first:
-      213: -1225129549106041729
-    second: worm_dialogue_3
+      213: -2794806096025398641
+    second: trophies_3
   - first:
-      213: 3941768838106002460
-    second: worm_dialogue_4
+      213: 3515805966228194823
+    second: trophies_4
   - first:
-      213: 8126148945953155549
-    second: worm_dialogue_5
+      213: 433263329960475595
+    second: trophies_5
   - first:
-      213: 6574220303644385837
-    second: worm_dialogue_6
+      213: -1615746246254421419
+    second: trophies_6
   - first:
-      213: -2143607196517080072
-    second: worm_dialogue_7
+      213: 403183521860211179
+    second: trophies_7
   - first:
-      213: 5992180701489558368
-    second: worm_dialogue_8
+      213: -5418182946659510162
+    second: trophies_8
   - first:
-      213: -524622008470017078
-    second: worm_dialogue_9
+      213: -3732504720050558382
+    second: trophies_9
   - first:
-      213: 6389531478595455693
-    second: worm_dialogue_10
+      213: -2935423685134900777
+    second: trophies_10
+  - first:
+      213: 4215934254611426796
+    second: trophies_11
+  - first:
+      213: -182929762659002042
+    second: trophies_12
+  - first:
+      213: 8951883009996113627
+    second: trophies_13
+  - first:
+      213: 3883616118839059632
+    second: trophies_14
+  - first:
+      213: 2648845888255167308
+    second: trophies_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +93,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -143,13 +158,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: worm_dialogue_0
+      name: trophies_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2531
-        width: 986
-        height: 413
+        x: 214
+        y: 1155
+        width: 315
+        height: 297
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5287d7e5d2fb948a0800000000000000
-      internalID: -6320310400458065883
+      spriteID: 48d09e4a406d06d50800000000000000
+      internalID: 6728613158726471044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: worm_dialogue_1
+      name: trophies_1
       rect:
         serializedVersion: 2
-        x: 1103
-        y: 2516
-        width: 1057
-        height: 428
+        x: 710
+        y: 1263
+        width: 149
+        height: 173
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 49043894205bf72e0800000000000000
-      internalID: -2125781477667684204
+      spriteID: b0bc02a2e0d44c300800000000000000
+      internalID: 271426600780745483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: worm_dialogue_2
+      name: trophies_2
       rect:
         serializedVersion: 2
-        x: 5
-        y: 2055
-        width: 977
-        height: 405
+        x: 1600
+        y: 975
+        width: 271
+        height: 342
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1a65a8186a52a940800000000000000
-      internalID: 5305902714132458015
+      spriteID: 21fa1e055b8ea7d60800000000000000
+      internalID: 7888873562736537362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: worm_dialogue_3
+      name: trophies_3
       rect:
         serializedVersion: 2
-        x: 1074
-        y: 2063
-        width: 977
-        height: 405
+        x: 36
+        y: 619
+        width: 295
+        height: 455
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7c23b58a277ffee0800000000000000
-      internalID: -1225129549106041729
+      spriteID: f825f46c9aad639d0800000000000000
+      internalID: -2794806096025398641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: worm_dialogue_4
+      name: trophies_4
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1575
-        width: 977
-        height: 405
+        x: 377
+        y: 612
+        width: 518
+        height: 502
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,20 +261,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c143306bfd9f3b630800000000000000
-      internalID: 3941768838106002460
+      spriteID: 7060b3416e6aac030800000000000000
+      internalID: 3515805966228194823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: worm_dialogue_5
+      name: trophies_5
       rect:
         serializedVersion: 2
-        x: 1061
-        y: 1577
-        width: 977
-        height: 405
+        x: 1088
+        y: 967
+        width: 306
+        height: 294
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +283,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd9e3738961e5c070800000000000000
-      internalID: 8126148945953155549
+      spriteID: bcb3f7cf3b2430600800000000000000
+      internalID: 433263329960475595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: worm_dialogue_6
+      name: trophies_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1064
-        width: 977
-        height: 405
+        x: 1505
+        y: 536
+        width: 343
+        height: 294
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d2262e1d8825c3b50800000000000000
-      internalID: 6574220303644385837
+      spriteID: 55a95d08957b399e0800000000000000
+      internalID: -1615746246254421419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: worm_dialogue_7
+      name: trophies_7
       rect:
         serializedVersion: 2
-        x: 1072
-        y: 1075
-        width: 977
-        height: 405
+        x: 46
+        y: 120
+        width: 433
+        height: 374
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,20 +327,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f3e0a1bc906042e0800000000000000
-      internalID: -2143607196517080072
+      spriteID: be1d4c7e645689500800000000000000
+      internalID: 403183521860211179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: worm_dialogue_8
+      name: trophies_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 552
-        width: 982
-        height: 405
+        x: 741
+        y: 99
+        width: 328
+        height: 418
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +349,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0637c3e9990882350800000000000000
-      internalID: 5992180701489558368
+      spriteID: 0b42267a84065e530800000000000000
+      internalID: 3883616118839059632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: worm_dialogue_9
+      name: trophies_15
       rect:
         serializedVersion: 2
-        x: 1117
-        y: 53
-        width: 977
-        height: 405
+        x: 1282
+        y: 179
+        width: 395
+        height: 220
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,30 +371,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acbeac7101b28b8f0800000000000000
-      internalID: -524622008470017078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: worm_dialogue_10
-      rect:
-        serializedVersion: 2
-        x: 1117
-        y: 548
-        width: 977
-        height: 405
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dcacbdec60d2ca850800000000000000
-      internalID: 6389531478595455693
+      spriteID: c4b043a1d4792c420800000000000000
+      internalID: 2648845888255167308
       vertices: []
       indices: 
       edges: []
@@ -388,7 +381,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bd1b3aa8bc175d24ca54fcfdababd96d
+    spriteID: 99f27a1d96be6514994ccf1c5536ca4a
     internalID: 0
     vertices: []
     indices: 
@@ -396,19 +389,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      worm_dialogue_0: -6320310400458065883
-      worm_dialogue_1: -2125781477667684204
-      worm_dialogue_10: 6389531478595455693
-      worm_dialogue_2: 5305902714132458015
-      worm_dialogue_3: -1225129549106041729
-      worm_dialogue_4: 3941768838106002460
-      worm_dialogue_5: 8126148945953155549
-      worm_dialogue_6: 6574220303644385837
-      worm_dialogue_7: -2143607196517080072
-      worm_dialogue_8: 5992180701489558368
-      worm_dialogue_9: -524622008470017078
+      trophies_0: 6728613158726471044
+      trophies_1: 271426600780745483
+      trophies_10: -2935423685134900777
+      trophies_11: 4215934254611426796
+      trophies_12: -182929762659002042
+      trophies_13: 8951883009996113627
+      trophies_14: 3883616118839059632
+      trophies_15: 2648845888255167308
+      trophies_2: 7888873562736537362
+      trophies_3: -2794806096025398641
+      trophies_4: 3515805966228194823
+      trophies_5: 433263329960475595
+      trophies_6: -1615746246254421419
+      trophies_7: 403183521860211179
+      trophies_8: -5418182946659510162
+      trophies_9: -3732504720050558382
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
