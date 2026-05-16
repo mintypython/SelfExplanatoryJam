@@ -119,12 +119,12 @@ TextureImporter:
       name: merchant_0
       rect:
         serializedVersion: 2
-        x: 115
-        y: 181
-        width: 359
-        height: 577
+        x: 0
+        y: 0
+        width: 914
+        height: 851
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -137,33 +137,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: merchant_1
-      rect:
-        serializedVersion: 2
-        x: 656
-        y: 154
-        width: 461
-        height: 659
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2856e78c99627e000800000000000000
-      internalID: 65063161555740034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 143ab82515ef9424aaa38c3aa5020b0f
     internalID: 0
     vertices: []
     indices: 
