@@ -301,14 +301,14 @@ PrefabInstance:
     - target: {fileID: 2744685415529951526, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 955269617735149257, guid: d77bddbc2d9cc5149b2bcac24c694760, type: 3}
+      objectReference: {fileID: 3940402697313036351, guid: d77bddbc2d9cc5149b2bcac24c694760, type: 3}
     - target: {fileID: 3862467672160720706, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Name
       value: Pelted
       objectReference: {fileID: 0}
     - target: {fileID: 3862467672160720706, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -482,9 +482,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6908171955229286103, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 249572445}
-    - targetCorrespondingSourceObject: {fileID: 6908171955229286103, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1730821498}
     - targetCorrespondingSourceObject: {fileID: 3467730714711803975, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1104080254}
@@ -494,6 +491,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3467730714711803975, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1775295973}
+    - targetCorrespondingSourceObject: {fileID: 3467730714711803975, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1730821498}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
 --- !u!224 &70926901 stripped
@@ -1090,7 +1090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2009037466488188646, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2566600798170428839, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_IsActive
@@ -1702,7 +1702,7 @@ PrefabInstance:
     - target: {fileID: 862252524080245089, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -7106271030926707833, guid: b4b34acca811b3944ac1bf85b6039d69, type: 3}
+      objectReference: {fileID: -6529989292653908751, guid: d77bddbc2d9cc5149b2bcac24c694760, type: 3}
     - target: {fileID: 1854464868525698411, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4083,7 +4083,7 @@ PrefabInstance:
     - target: {fileID: 387727436237248646, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3344537066048320429, guid: 315ba9a76095c4246bbed8700dc30fbd, type: 3}
+      objectReference: {fileID: -3810385858824075420, guid: 315ba9a76095c4246bbed8700dc30fbd, type: 3}
     - target: {fileID: 5291335936410763947, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_Name
       value: Thanks
@@ -4202,7 +4202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdae1b21fb44ac48969eddb81a70a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnlockTrophy
-  trophy: Stocks
+  trophy: Stethoscope
 --- !u!1 &1120699981
 GameObject:
   m_ObjectHideFlags: 0
@@ -5342,7 +5342,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 70926902}
+    m_TransformParent: {fileID: 1860327100}
     m_Modifications:
     - target: {fileID: 387727436237248646, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_Sprite
@@ -5406,15 +5406,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7093233084272782635, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7093233084272782635, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7093233084272782635, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7093233084272782635, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5461,7 +5461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdae1b21fb44ac48969eddb81a70a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnlockTrophy
-  trophy: Stethoscope
+  trophy: Disgust
 --- !u!1 &1771958408 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3862467672160720706, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
@@ -5475,9 +5475,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1860327100}
     m_Modifications:
+    - target: {fileID: 387727436237248646, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7095606498098818857, guid: 315ba9a76095c4246bbed8700dc30fbd, type: 3}
     - target: {fileID: 1270186954461094221, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2464866235615292536, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: sprite
@@ -5574,7 +5578,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5291335936410763947, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1775295976}
   m_SourcePrefab: {fileID: 100100000, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
 --- !u!224 &1775295973 stripped
 RectTransform:
@@ -5586,6 +5593,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5291335936410763947, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
   m_PrefabInstance: {fileID: 1775295972}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1775295976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775295974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bdae1b21fb44ac48969eddb81a70a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnlockTrophy
+  trophy: Worm
 --- !u!1001 &1775586317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5680,7 +5700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2009037466488188646, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2815374948527621320, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_Sprite
@@ -6338,7 +6358,7 @@ PrefabInstance:
     - target: {fileID: 387727436237248646, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3344537066048320429, guid: 315ba9a76095c4246bbed8700dc30fbd, type: 3}
+      objectReference: {fileID: -1486184867812715670, guid: 315ba9a76095c4246bbed8700dc30fbd, type: 3}
     - target: {fileID: 5291335936410763947, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_Name
       value: WormDoc
@@ -6457,7 +6477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdae1b21fb44ac48969eddb81a70a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnlockTrophy
-  trophy: Bandage
+  trophy: Stocks
 --- !u!224 &1890136517 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3467730714711803975, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
