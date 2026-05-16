@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 44296548}
   - component: {fileID: 44296547}
   m_Layer: 5
-  m_Name: Stocks
+  m_Name: Chemical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 267.00006, y: 47.179985}
-  m_SizeDelta: {x: 225.02, y: 194.36}
+  m_AnchoredPosition: {x: 267.00015, y: 46.53502}
+  m_SizeDelta: {x: 226.63, y: 217.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &44296547
 MonoBehaviour:
@@ -419,7 +419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2009037466488188646, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2815374948527621320, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_Sprite
@@ -631,7 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdae1b21fb44ac48969eddb81a70a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnlockTrophy
-  trophy: Stocks
+  trophy: Chemical
 --- !u!1001 &129220281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1090,7 +1090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2009037466488188646, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2566600798170428839, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
       propertyPath: m_IsActive
@@ -1435,7 +1435,7 @@ PrefabInstance:
     - target: {fileID: 862252524080245089, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -7106271030926707833, guid: b4b34acca811b3944ac1bf85b6039d69, type: 3}
+      objectReference: {fileID: 955269617735149257, guid: d77bddbc2d9cc5149b2bcac24c694760, type: 3}
     - target: {fileID: 1854464868525698411, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3853,7 +3853,7 @@ PrefabInstance:
     - target: {fileID: 395688076613351208, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: second.leadsTo
       value: 
-      objectReference: {fileID: 383440447}
+      objectReference: {fileID: 1104080255}
     - target: {fileID: 862252524080245089, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3945,7 +3945,7 @@ PrefabInstance:
     - target: {fileID: 2744685415529951526, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 8372542296500514906, guid: d77bddbc2d9cc5149b2bcac24c694760, type: 3}
+      objectReference: {fileID: -2687432120863374791, guid: d77bddbc2d9cc5149b2bcac24c694760, type: 3}
     - target: {fileID: 3862467672160720706, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Name
       value: Investigate
@@ -4090,7 +4090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291335936410763947, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7093233084272782635, guid: 2cb03c2ced0566e418a019900a686c60, type: 3}
       propertyPath: m_Pivot.x
@@ -5004,7 +5004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3862467672160720706, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5318,7 +5318,7 @@ PrefabInstance:
     - target: {fileID: 2744685415529951526, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -7106271030926707833, guid: b4b34acca811b3944ac1bf85b6039d69, type: 3}
+      objectReference: {fileID: -9077780755297942319, guid: b4b34acca811b3944ac1bf85b6039d69, type: 3}
     - target: {fileID: 3862467672160720706, guid: 3004b0b29b7dfed41bfff5339bdf2c5d, type: 3}
       propertyPath: m_Name
       value: Start
@@ -6532,7 +6532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdae1b21fb44ac48969eddb81a70a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnlockTrophy
-  trophy: Stocks
+  trophy: Stethoscope
 --- !u!224 &1890136517 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3467730714711803975, guid: 587140e0d28583e45aecdb907c9b6ed8, type: 3}
